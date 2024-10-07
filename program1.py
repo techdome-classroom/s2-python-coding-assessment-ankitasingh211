@@ -7,16 +7,11 @@ class Solution(object):
         matching_brackets = {')': '(', '}': '{', ']': '['}
         stack = []
         for char in s:
-            # If the character is a closing bracket
             if char in matching_brackets:
-                
                 top_element = stack.pop() if stack else '#'
-                
-                
                 if matching_brackets[char] != top_element:
                     return False
             else:
-                
                 stack.append(char)
 
 
