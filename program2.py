@@ -28,7 +28,7 @@ class Solution(object):
             else:
                 total += current_value
             
-            # Update previous value to current one
+          
             prev_value = current_value
 
         return total
