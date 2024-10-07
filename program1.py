@@ -15,6 +15,7 @@ class Solution(object):
                 stack.append(char)
 
         return not stack
+        
 
 solution = Solution()
 s = input()        
