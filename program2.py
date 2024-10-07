@@ -22,7 +22,7 @@ class Solution(object):
         for char in s:
             current_value = roman_values[char]
 
-            # If current value is greater than previous, subtract twice the previous value (to handle cases like IV, IX)
+           
             if current_value > prev_value:
                 total += current_value - 2 * prev_value
             else:
