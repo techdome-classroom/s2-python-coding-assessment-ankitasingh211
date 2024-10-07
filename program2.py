@@ -18,7 +18,7 @@ class Solution(object):
         total = 0
         prev_value = 0
 
-        # Iterate through the string from left to right
+        
         for char in s:
             current_value = roman_values[char]
 
