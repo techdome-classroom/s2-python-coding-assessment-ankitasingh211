@@ -17,7 +17,10 @@ class Solution(object):
         return not stack
 
 s = input()        
-
+if solution.isValid(s):
+    print("true")
+else:
+    print("false")
 
 
 
