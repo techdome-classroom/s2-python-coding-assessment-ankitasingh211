@@ -4,6 +4,34 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
+
+        roman_values = {
+            'I': 1,
+            'V': 5,
+            'X': 10,
+            'L': 50,
+            'C': 100,
+            'D': 500,
+            'M': 1000
+        }
+
+        total = 0
+        prev_value = 0
+
+        # Iterate through the string from left to right
+        for char in s:
+            current_value = roman_values[char]
+
+            # If current value is greater than previous, subtract twice the previous value (to handle cases like IV, IX)
+            if current_value > prev_value:
+                total += current_value - 2 * prev_value
+            else:
+                total += current_value
+            
+            # Update previous value to current one
+            prev_value = current_value
+
+        return total
         pass
 
 
