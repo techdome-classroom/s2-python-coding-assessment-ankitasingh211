@@ -16,7 +16,8 @@ class Solution(object):
 
         return not stack
 
-s = input("Enter a string containing parentheses, braces, or brackets: ")        
+s = input()        
+
 
 
 
